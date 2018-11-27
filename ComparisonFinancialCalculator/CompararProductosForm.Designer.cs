@@ -52,11 +52,21 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.vna1 = new System.Windows.Forms.Label();
+            this.vae1 = new System.Windows.Forms.Label();
+            this.vae2 = new System.Windows.Forms.Label();
+            this.vna2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(29, 383);
+            this.button1.Location = new System.Drawing.Point(41, 385);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(83, 42);
             this.button1.TabIndex = 0;
@@ -146,7 +156,7 @@
             // 
             // comparar_button
             // 
-            this.comparar_button.Location = new System.Drawing.Point(362, 358);
+            this.comparar_button.Location = new System.Drawing.Point(371, 366);
             this.comparar_button.Name = "comparar_button";
             this.comparar_button.Size = new System.Drawing.Size(94, 41);
             this.comparar_button.TabIndex = 21;
@@ -251,11 +261,111 @@
             this.label10.TabIndex = 24;
             this.label10.Text = "TREMA";
             // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(90, 297);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(36, 17);
+            this.label13.TabIndex = 34;
+            this.label13.Text = "VNA";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(93, 318);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(35, 17);
+            this.label14.TabIndex = 35;
+            this.label14.Text = "VAE";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(309, 318);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(114, 17);
+            this.label15.TabIndex = 36;
+            this.label15.Text = "Es más rentable:";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(429, 318);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(16, 17);
+            this.label16.TabIndex = 37;
+            this.label16.Text = "?";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(575, 318);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(35, 17);
+            this.label17.TabIndex = 39;
+            this.label17.Text = "VAE";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(572, 297);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(36, 17);
+            this.label18.TabIndex = 38;
+            this.label18.Text = "VNA";
+            // 
+            // vna1
+            // 
+            this.vna1.AutoSize = true;
+            this.vna1.Location = new System.Drawing.Point(186, 296);
+            this.vna1.Name = "vna1";
+            this.vna1.Size = new System.Drawing.Size(16, 17);
+            this.vna1.TabIndex = 40;
+            this.vna1.Text = "0";
+            // 
+            // vae1
+            // 
+            this.vae1.AutoSize = true;
+            this.vae1.Location = new System.Drawing.Point(186, 318);
+            this.vae1.Name = "vae1";
+            this.vae1.Size = new System.Drawing.Size(16, 17);
+            this.vae1.TabIndex = 41;
+            this.vae1.Text = "0";
+            // 
+            // vae2
+            // 
+            this.vae2.AutoSize = true;
+            this.vae2.Location = new System.Drawing.Point(682, 319);
+            this.vae2.Name = "vae2";
+            this.vae2.Size = new System.Drawing.Size(16, 17);
+            this.vae2.TabIndex = 43;
+            this.vae2.Text = "0";
+            // 
+            // vna2
+            // 
+            this.vna2.AutoSize = true;
+            this.vna2.Location = new System.Drawing.Point(682, 297);
+            this.vna2.Name = "vna2";
+            this.vna2.Size = new System.Drawing.Size(16, 17);
+            this.vna2.TabIndex = 42;
+            this.vna2.Text = "0";
+            // 
             // CompararProductosForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.vae2);
+            this.Controls.Add(this.vna2);
+            this.Controls.Add(this.vae1);
+            this.Controls.Add(this.vna1);
+            this.Controls.Add(this.label17);
+            this.Controls.Add(this.label18);
+            this.Controls.Add(this.label16);
+            this.Controls.Add(this.label15);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.label13);
             this.Controls.Add(this.recuperacion2);
             this.Controls.Add(this.nper2);
             this.Controls.Add(this.mantenimiento2);
@@ -313,5 +423,15 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label vna1;
+        private System.Windows.Forms.Label vae1;
+        private System.Windows.Forms.Label vae2;
+        private System.Windows.Forms.Label vna2;
     }
 }

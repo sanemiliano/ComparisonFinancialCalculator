@@ -10,26 +10,16 @@ using System.Windows.Forms;
 
 namespace ComparisonFinancialCalculator
 {
-    public partial class Form1 : Form
+    public partial class CompararProductosForm : Form
     {
-        public Form1()
+        public CompararProductosForm()
         {
             InitializeComponent();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            CompararProductosForm form = new CompararProductosForm();
-            form.Owner = this;
-            form.Show();
-            this.Hide();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            CompararProyectosForm form = new CompararProyectosForm();
-            form.Owner = this;
-            form.Show();
+            this.Owner.Show();
             this.Hide();
         }
     }

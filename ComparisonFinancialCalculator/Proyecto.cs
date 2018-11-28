@@ -1,8 +1,10 @@
-﻿using System;
+﻿using Microsoft.VisualBasic;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
 
 namespace ComparisonFinancialCalculator
 {
@@ -25,11 +27,13 @@ namespace ComparisonFinancialCalculator
         public double calcularVNA() //Calculate the NPV (Net present value)
         {
             double vna = 0;
-            for(int i = 0; i < nper; i++)
-            {
-                vna += ((flow[i]) / Math.Pow(1 + trema, i));
-            }
+            vna = Financial.NPV(trema, ref flow);
+            //for(int i = 0; i < nper; i++)
+            //{
+            //    vna += ((flow[i]) / Math.Pow(1 + trema, i));
+            //}
             vna += inicial;
+            //vna = Math.Round(vna, 0);
             this.vna = vna;
             return vna;
         }

@@ -33,7 +33,8 @@ namespace ComparisonFinancialCalculator
             //    vna += ((flow[i]) / Math.Pow(1 + trema, i));
             //}
             vna += inicial;
-            //vna = Math.Round(vna, 0);
+            vna = Math.Round(vna, 0);
+
             this.vna = vna;
             return vna;
         }

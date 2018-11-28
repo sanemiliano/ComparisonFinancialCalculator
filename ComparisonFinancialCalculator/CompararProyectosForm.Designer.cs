@@ -56,7 +56,7 @@
             this.vna1 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
+            this.resultado = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
@@ -306,14 +306,14 @@
             this.label18.TabIndex = 71;
             this.label18.Text = "VNA";
             // 
-            // label16
+            // resultado
             // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(474, 443);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(16, 17);
-            this.label16.TabIndex = 70;
-            this.label16.Text = "?";
+            this.resultado.AutoSize = true;
+            this.resultado.Location = new System.Drawing.Point(474, 443);
+            this.resultado.Name = "resultado";
+            this.resultado.Size = new System.Drawing.Size(16, 17);
+            this.resultado.TabIndex = 70;
+            this.resultado.Text = "?";
             // 
             // label15
             // 
@@ -395,7 +395,7 @@
             this.Controls.Add(this.vna1);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.label18);
-            this.Controls.Add(this.label16);
+            this.Controls.Add(this.resultado);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label13);
@@ -460,7 +460,7 @@
         private System.Windows.Forms.Label vna1;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label resultado;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label13;

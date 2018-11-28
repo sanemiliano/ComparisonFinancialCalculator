@@ -102,6 +102,23 @@ namespace ComparisonFinancialCalculator
             producto2.calcularVAE();
             vna2.Text = Convert.ToString(producto2.vna);
             vae2.Text = Convert.ToString(producto2.vae);
+            int uno, dos;
+            uno = Convert.ToInt32(nper1.Text);
+            dos = Convert.ToInt32(nper2.Text);
+            if(uno == dos)
+            {
+                if (producto1.vna > producto2.vna)
+                    resultado.Text = "Producto 1";
+                else
+                    resultado.Text = "Producto 2";
+            }
+            else
+            {
+                if (producto1.vae > producto2.vae)
+                    resultado.Text = "Producto 1";
+                else
+                    resultado.Text = "Producto 2";
+            }
         }
     }
 }

@@ -162,6 +162,7 @@
             this.comparar_button.TabIndex = 21;
             this.comparar_button.Text = "Comparar";
             this.comparar_button.UseVisualStyleBackColor = true;
+            this.comparar_button.Click += new System.EventHandler(this.comparar_button_Click);
             // 
             // label11
             // 

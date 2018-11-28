@@ -40,10 +40,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.recuperacion2 = new System.Windows.Forms.TextBox();
+            this.nper2 = new System.Windows.Forms.TextBox();
+            this.inicial2 = new System.Windows.Forms.TextBox();
+            this.trema2 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -62,6 +62,8 @@
             this.label13 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
+            this.cargar1 = new System.Windows.Forms.Button();
+            this.cargar2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
@@ -84,6 +86,7 @@
             this.comparar_button.TabIndex = 44;
             this.comparar_button.Text = "Comparar";
             this.comparar_button.UseVisualStyleBackColor = true;
+            this.comparar_button.Click += new System.EventHandler(this.comparar_button_Click);
             // 
             // recuperacion1
             // 
@@ -167,33 +170,33 @@
             this.label11.TabIndex = 55;
             this.label11.Text = "Producto 1";
             // 
-            // textBox1
+            // recuperacion2
             // 
-            this.textBox1.Location = new System.Drawing.Point(620, 169);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 22);
-            this.textBox1.TabIndex = 64;
+            this.recuperacion2.Location = new System.Drawing.Point(620, 169);
+            this.recuperacion2.Name = "recuperacion2";
+            this.recuperacion2.Size = new System.Drawing.Size(100, 22);
+            this.recuperacion2.TabIndex = 64;
             // 
-            // textBox2
+            // nper2
             // 
-            this.textBox2.Location = new System.Drawing.Point(620, 86);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 22);
-            this.textBox2.TabIndex = 63;
+            this.nper2.Location = new System.Drawing.Point(620, 86);
+            this.nper2.Name = "nper2";
+            this.nper2.Size = new System.Drawing.Size(100, 22);
+            this.nper2.TabIndex = 63;
             // 
-            // textBox3
+            // inicial2
             // 
-            this.textBox3.Location = new System.Drawing.Point(620, 123);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 22);
-            this.textBox3.TabIndex = 62;
+            this.inicial2.Location = new System.Drawing.Point(620, 123);
+            this.inicial2.Name = "inicial2";
+            this.inicial2.Size = new System.Drawing.Size(100, 22);
+            this.inicial2.TabIndex = 62;
             // 
-            // textBox4
+            // trema2
             // 
-            this.textBox4.Location = new System.Drawing.Point(620, 51);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 22);
-            this.textBox4.TabIndex = 61;
+            this.trema2.Location = new System.Drawing.Point(620, 51);
+            this.trema2.Name = "trema2";
+            this.trema2.Size = new System.Drawing.Size(100, 22);
+            this.trema2.TabIndex = 61;
             // 
             // label3
             // 
@@ -357,11 +360,33 @@
             this.label10.TabIndex = 78;
             this.label10.Text = "Flujo de efectivo";
             // 
+            // cargar1
+            // 
+            this.cargar1.Location = new System.Drawing.Point(335, 70);
+            this.cargar1.Name = "cargar1";
+            this.cargar1.Size = new System.Drawing.Size(75, 59);
+            this.cargar1.TabIndex = 79;
+            this.cargar1.Text = "Cargar NPer";
+            this.cargar1.UseVisualStyleBackColor = true;
+            this.cargar1.Click += new System.EventHandler(this.cargar1_Click);
+            // 
+            // cargar2
+            // 
+            this.cargar2.Location = new System.Drawing.Point(740, 73);
+            this.cargar2.Name = "cargar2";
+            this.cargar2.Size = new System.Drawing.Size(75, 52);
+            this.cargar2.TabIndex = 80;
+            this.cargar2.Text = "Cargar NPer";
+            this.cargar2.UseVisualStyleBackColor = true;
+            this.cargar2.Click += new System.EventHandler(this.cargar2_Click);
+            // 
             // CompararProyectosForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(860, 534);
+            this.Controls.Add(this.cargar2);
+            this.Controls.Add(this.cargar1);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.vae2);
@@ -376,10 +401,10 @@
             this.Controls.Add(this.label13);
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.recuperacion2);
+            this.Controls.Add(this.nper2);
+            this.Controls.Add(this.inicial2);
+            this.Controls.Add(this.trema2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label7);
@@ -419,10 +444,10 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox recuperacion2;
+        private System.Windows.Forms.TextBox nper2;
+        private System.Windows.Forms.TextBox inicial2;
+        private System.Windows.Forms.TextBox trema2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
@@ -441,5 +466,7 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Button cargar1;
+        private System.Windows.Forms.Button cargar2;
     }
 }

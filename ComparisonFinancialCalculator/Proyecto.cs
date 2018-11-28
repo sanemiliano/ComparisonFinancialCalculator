@@ -15,7 +15,7 @@ namespace ComparisonFinancialCalculator
         public double vna;
         public double vae;
         
-        public Proyecto(int nper,double trema, double[] flow, double inicial, double final)
+        public Proyecto(int nper,double trema, double[] flow, double inicial)
         {
             this.nper = nper;
             this.trema = trema;
@@ -37,6 +37,7 @@ namespace ComparisonFinancialCalculator
         {
             double vae = 0;
             vae = (trema * vna) / (1 - Math.Pow(1 + trema, -nper));
+            this.vae = vae;
             return vae;
         } 
     }

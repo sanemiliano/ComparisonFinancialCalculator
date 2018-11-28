@@ -64,6 +64,7 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
+    <Compile Include="Proyecto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="CompararProductosForm.resx">
       <DependentUpon>CompararProductosForm.cs</DependentUpon>

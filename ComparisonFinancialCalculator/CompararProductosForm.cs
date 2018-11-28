@@ -20,7 +20,7 @@ namespace ComparisonFinancialCalculator
         private void button1_Click(object sender, EventArgs e)
         {
             this.Owner.Show();
-            this.Hide();
+            this.Hide(); 
         }
     }
 }
